@@ -10,7 +10,7 @@ things i believe:
 
 on the internet:
 * [markus.lukk@antler.co](markus.lukk@antler.co)
-* @markuslukk on [X](https://x.com/markuslukk), [GitHub](https://github.com/markuslukk), anything new
+* @markuslukk on [X](https://x.com/markuslukk), [GitHub](https://github.com/markuslukk)
 
 writing:
 * imminent
