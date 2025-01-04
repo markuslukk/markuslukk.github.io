@@ -11,7 +11,7 @@ things i believe:
 
 on the internet:
 * [markus.lukk@antler.co](mailto:markus.lukk@antler.co)
-* @markuslukk on [X](https://x.com/markuslukk), [GitHub](https://github.com/markuslukk)
+* @markuslukk on [x](https://x.com/markuslukk), [github](https://github.com/markuslukk)
 
 writing/thoughts:
 * imminent
