@@ -1,5 +1,6 @@
 # Markus Lukk
 
+briefly:
 * i'm estonian
 * i spend my days working with founders who want to drive this world forward
 
