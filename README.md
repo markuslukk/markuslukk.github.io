@@ -1,6 +1,6 @@
 # Markus Lukk
 
-* i'm estonian
+* i'm estonian, but lived in 8 countries by nurture
 * i spend my days working with founders who want to drive this world forward
 
 things i believe:
