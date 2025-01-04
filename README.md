@@ -9,7 +9,7 @@ things i believe:
 * a week is 2% of a year - make the most of it
 
 on the internet:
-* [markus.lukk@antler.co](markus.lukk@antler.co)
+* [markus.lukk@antler.co](mailto:markus.lukk@antler.co)
 * @markuslukk on [X](https://x.com/markuslukk), [GitHub](https://github.com/markuslukk)
 
 writing:
