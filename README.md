@@ -1,4 +1,4 @@
-# <h3> Markus Lukk
+# Markus Lukk
 
 * i'm estonian
 * i spend my days working with founders who want to drive this world forward
