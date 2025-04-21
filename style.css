@@ -1,23 +1,30 @@
 body {
-    font-family: 'Fragment Mono', sans-serif; /* Use the specified font */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Lighter, more minimalist font */
     font-size: 18px; /* Base font size */
-    line-height: 1.6; /* Line height for readability */
-    color: #000; /* Text color */
+    line-height: 1.5; /* Improved line height for better readability */
+    color: #444; /* Softer text color */
     margin: 0; /* Remove default margins */
     padding: 20px; /* Add some padding */
     background-color: #f9f9f9; /* Light background color */
 }
 
+header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between name and link */
+    align-items: center; /* Center items vertically */
+    padding: 20px 0; /* Space around header content */
+}
+
 h1 {
-    margin-top: 20px; /* Space above heading */
-    font-size: 38px; /* Size for the main heading */
-    line-height: 44px; /* Line height for the heading */
-    text-align: left; /* Align heading to the left */
+    margin: 0; /* Remove default margin */
+    font-size: 36px; /* Size for the main heading */
+    line-height: 40px; /* Line height for the heading */
 }
 
 h2 {
-    margin-top: 20px; /* Space above subheading */
-    font-size: 28px; /* Size for subheadings */
+    margin-top: 15px; /* Space above subheading */
+    margin-bottom: 5px; /* Space below subheading */
+    font-size: 24px; /* Size for subheadings */
 }
 
 ul {
@@ -26,13 +33,13 @@ ul {
 }
 
 nav {
-    margin-top: 20px; /* Space above navigation */
+    margin-top: 10px; /* Space above navigation */
 }
 
 nav a {
     text-decoration: none; /* Remove underline */
-    color: #000; /* Link color */
-    font-weight: bold; /* Make the link bold */
+    color: #444; /* Link color */
+    font-weight: normal; /* Normal weight for links */
     margin-left: 20px; /* Space between links */
 }
 
