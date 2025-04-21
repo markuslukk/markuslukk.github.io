@@ -1,42 +1,41 @@
 body {
-    font-family: 'Arial', sans-serif; /* Use a clean, readable font */
+    font-family: 'Fragment Mono', sans-serif; /* Use the specified font */
     font-size: 18px; /* Base font size */
-    line-height: 1.6; /* Line height for better readability */
-    color: #333; /* Text color */
+    line-height: 1.6; /* Line height for readability */
+    color: #000; /* Text color */
     margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+    padding: 20px; /* Add some padding */
     background-color: #f9f9f9; /* Light background color */
 }
 
-header {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between name and link */
-    align-items: center; /* Center items vertically */
-    padding: 20px; /* Space around header content */
-    background-color: #fff; /* White background for the header */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+h1 {
+    margin-top: 20px; /* Space above heading */
+    font-size: 38px; /* Size for the main heading */
+    line-height: 44px; /* Line height for the heading */
+    text-align: left; /* Align heading to the left */
 }
 
-h1 {
-    margin: 0; /* Remove default margin */
-    font-size: 28px; /* Size for the main heading */
+h2 {
+    margin-top: 20px; /* Space above subheading */
+    font-size: 28px; /* Size for subheadings */
+}
+
+ul {
+    list-style-type: disc; /* Default bullet points */
+    margin-left: 20px; /* Indent list items */
+}
+
+nav {
+    margin-top: 20px; /* Space above navigation */
 }
 
 nav a {
     text-decoration: none; /* Remove underline */
-    color: #333; /* Link color */
+    color: #000; /* Link color */
     font-weight: bold; /* Make the link bold */
     margin-left: 20px; /* Space between links */
 }
 
 nav a:hover {
-    text-decoration: underline; /* Underline on hover for better UX */
+    text-decoration: underline; /* Underline on hover */
 }
-
-.content {
-    max-width: 800px; /* Limit content width */
-    margin: 20px auto; /* Center content */
-    padding: 20px; /* Padding for comfort */
-    background-color: #fff; /* Background for content area */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sub
