@@ -5,7 +5,7 @@ layout: default
 # Markus Lukk
 
 briefly:
-* i'm estonian
+* i'm estonian but had the chance to live in 9 countries so far
 * i spend my days working with founders who want to drive this world forward
 
 things i believe:
@@ -15,7 +15,7 @@ things i believe:
 
 on the internet:
 * [markus.lukk@antler.co](mailto:markus.lukk@antler.co)
-* @markuslukk on [x](https://x.com/markuslukk), [github](https://github.com/markuslukk)
+* [x](https://x.com/markuslukk), [github](https://github.com/markuslukk)
 
 writing/thoughts:
 * imminent
