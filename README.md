@@ -2,8 +2,6 @@
 layout: default
 ---
 
-# Markus Lukk
-
 briefly:
 * i'm estonian but had the chance to live in 9 countries so far
 * i spend my days working with founders who want to drive this world forward
