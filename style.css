@@ -1,32 +1,42 @@
 body {
-    font-family: 'Arial', sans-serif; /* Change to a sharper font */
-    font-size: 18px; /* Adjust base font size */
-    line-height: 1.6; /* Improve line spacing */
+    font-family: 'Arial', sans-serif; /* Use a clean, readable font */
+    font-size: 18px; /* Base font size */
+    line-height: 1.6; /* Line height for better readability */
     color: #333; /* Text color */
-    margin: 0; /* Remove default margin */
-    padding: 20px; /* Add padding */
-    background-color: #f9f9f9; /* Light background */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between name and link */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Space around header content */
+    background-color: #fff; /* White background for the header */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 h1 {
-    font-family: 'Georgia', serif; /* Distinct font for headings */
-    font-size: 36px; /* Larger size for headings */
-    margin-bottom: 20px; /* Space below heading */
+    margin: 0; /* Remove default margin */
+    font-size: 28px; /* Size for the main heading */
 }
 
-h2 {
-    font-size: 28px; /* Size for subheadings */
-    margin-top: 30px; /* Space above */
-    margin-bottom: 10px; /* Space below */
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Link color */
+    font-weight: bold; /* Make the link bold */
+    margin-left: 20px; /* Space between links */
 }
 
-ul {
-    list-style-type: disc; /* Default list style */
-    margin-left: 20px; /* Indent list items */
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
 }
 
 .content {
-    max-width: 800px; /* Limit width for better layout */
-    margin: 0 auto; /* Center the content */
-    padding: 20px; /* Add padding for comfort */
-}
+    max-width: 800px; /* Limit content width */
+    margin: 20px auto; /* Center content */
+    padding: 20px; /* Padding for comfort */
+    background-color: #fff; /* Background for content area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sub
