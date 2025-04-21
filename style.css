@@ -1,5 +1,5 @@
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Lighter, more minimalist font */
+    font-family: 'Montserrat', sans-serif; /* Updated font */
     font-size: 18px; /* Base font size */
     line-height: 1.5; /* Improved line height for better readability */
     color: #444; /* Softer text color */
@@ -10,19 +10,31 @@ body {
 
 header {
     display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between name and link */
+    justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     padding: 20px 0; /* Space around header content */
 }
 
 h1 {
     margin: 0; /* Remove default margin */
-    font-size: 36px; /* Size for the main heading */
-    line-height: 40px; /* Line height for the heading */
+    font-size: 40px; /* Slightly larger for emphasis */
+    line-height: 44px; /* Line height for the heading */
+    margin-right: 20px; /* Space between name and link */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: #444; /* Link color */
+    font-weight: normal; /* Normal weight for links */
+    font-size: 32px; /* Size for "Curiosities" link */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 h2 {
-    margin-top: 15px; /* Space above subheading */
+    margin-top: 10px; /* Space above subheading */
     margin-bottom: 5px; /* Space below subheading */
     font-size: 24px; /* Size for subheadings */
 }
@@ -32,17 +44,6 @@ ul {
     margin-left: 20px; /* Indent list items */
 }
 
-nav {
-    margin-top: 10px; /* Space above navigation */
-}
-
-nav a {
-    text-decoration: none; /* Remove underline */
-    color: #444; /* Link color */
-    font-weight: normal; /* Normal weight for links */
-    margin-left: 20px; /* Space between links */
-}
-
-nav a:hover {
-    text-decoration: underline; /* Underline on hover */
+.content {
+    margin-top: 20px; /* Space above content */
 }
