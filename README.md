@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Markus Lukk
 
 briefly:
