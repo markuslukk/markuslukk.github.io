@@ -15,9 +15,10 @@ title: Notes - Markus Lukk
     </nav>
   </header>
 
-  <h1 class="section-heading">NOTES</h1>
-
-  <p class="empty-state">Coming soon...</p>
+  <main>
+    <h2 class="section-heading">Notes</h2>
+    <p class="empty-state">Coming soon...</p>
+  </main>
 </div>
 
 <script src="/theme.js"></script>
