@@ -1,1 +1,1 @@
-personal website
+welcome to my mind
