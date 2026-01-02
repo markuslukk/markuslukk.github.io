@@ -243,3 +243,61 @@ nav a.active {
   color: var(--text-muted);
   font-style: italic;
 }
+
+/* Book list styles */
+.book-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.book-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.book-author {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.book-note {
+  font-size: 0.85rem;
+  color: var(--text-faint);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+.book-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.stars {
+  color: var(--text-color);
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.item-date {
+  font-size: 0.8rem;
+  color: var(--text-faint);
+}
