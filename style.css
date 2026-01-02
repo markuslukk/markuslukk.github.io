@@ -4,12 +4,31 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bg-color: #0a0a0a;
+  --text-color: #e5e5e5;
+  --text-muted: #888;
+  --text-faint: #555;
+  --border-color: #1a1a1a;
+  --link-color: #e5e5e5;
+}
+
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --text-muted: #555;
+  --text-faint: #888;
+  --border-color: #e5e5e5;
+  --link-color: #1a1a1a;
+}
+
 body {
-  background-color: #0a0a0a;
-  color: #e5e5e5;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   min-height: 100vh;
   padding: 60px 40px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .container {
@@ -21,55 +40,196 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
-.name {
+a.name {
   font-size: 1.1rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+a.name:hover {
+  opacity: 0.7;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 nav a {
-  color: #666;
+  color: var(--text-faint);
   text-decoration: none;
-  margin-left: 24px;
   font-size: 0.9rem;
 }
 
 nav a:hover {
-  color: #999;
+  color: var(--text-muted);
 }
 
-.bio {
+nav a.active {
+  color: var(--text-color);
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
   font-size: 1rem;
-  line-height: 1.7;
-  color: #888;
-  max-width: 480px;
+  transition: border-color 0.3s;
 }
 
-.bio a {
-  color: #e5e5e5;
+.theme-toggle:hover {
+  border-color: var(--text-muted);
+}
+
+/* Page title */
+.page-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+
+/* Content sections */
+.content-section {
+  margin-bottom: 40px;
+}
+
+.content-section h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 15px;
+}
+
+.bio-list {
+  list-style: none;
+}
+
+.bio-list li {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.bio-list a {
+  color: var(--link-color);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-.bio a:hover {
-  color: #fff;
+.bio-list a:hover {
+  opacity: 0.7;
 }
 
+/* Item lists (for Curiosities) */
+.item-list {
+  list-style: none;
+}
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.item-title {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+a.item-title:hover {
+  color: var(--text-color);
+}
+
+.item-date {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+
+/* Sort control */
+.sort-control {
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.sort-control span {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+  border: 1px solid var(--border-color);
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+/* Book list */
+.book-list {
+  list-style: none;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.book-title {
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.book-author {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+
+.book-note {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+.book-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.stars {
+  color: #f4c150;
+  font-size: 0.9rem;
+}
+
+/* Links section */
 .links {
   margin-top: 60px;
 }
 
 .links a {
   display: block;
-  color: #555;
+  color: var(--text-faint);
   text-decoration: none;
   font-size: 0.9rem;
   margin-bottom: 8px;
 }
 
 .links a:hover {
-  color: #888;
+  color: var(--text-muted);
 }
