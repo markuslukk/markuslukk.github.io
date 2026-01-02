@@ -1,8 +1,6 @@
 (function() {
   const toggle = document.getElementById('theme-toggle');
   const html = document.documentElement;
-  const sunIcon = document.querySelector('.toggle-icon.sun');
-  const moonIcon = document.querySelector('.toggle-icon.moon');
   
   // Check for saved theme or default to dark
   const savedTheme = localStorage.getItem('theme') || 'dark';
@@ -19,12 +17,15 @@
   });
   
   function updateToggleIcons(theme) {
+    const sunIcon = document.querySelector('.toggle-icon.sun');
+    const moonIcon = document.querySelector('.toggle-icon.moon');
+    
     if (theme === 'dark') {
+      moonIcon.classList.add('active');
+      sunIcon.classList.remove('active');
+    } else {
       sunIcon.classList.add('active');
       moonIcon.classList.remove('active');
-    } else {
-      sunIcon.classList.remove('active');
-      moonIcon.classList.add('active');
     }
   }
 })();
