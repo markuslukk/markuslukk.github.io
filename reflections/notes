@@ -1,0 +1,23 @@
+---
+layout: default
+title: Notes - Markus Lukk
+---
+<div class="container">
+  <header>
+    <a href="/" class="name">Markus Lukk</a>
+    <nav>
+      <a href="/reflections" class="active">Reflections</a>
+      <a href="/books">Books</a>
+      <button id="theme-toggle" class="theme-toggle">
+        <span class="toggle-icon sun">☀️</span>
+        <span class="toggle-icon moon">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <h1 class="section-heading">NOTES</h1>
+
+  <p class="empty-state">Coming soon...</p>
+</div>
+
+<script src="/theme.js"></script>
