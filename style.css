@@ -3,6 +3,7 @@
   --text-color: #1a1a1a;
   --text-muted: #4a4a4a;
   --text-faint: #8a8a8a;
+  --border-color: #e0e0e0;
 }
 
 [data-theme="dark"] {
@@ -10,6 +11,7 @@
   --text-color: #e5e5e5;
   --text-muted: #a0a0a0;
   --text-faint: #6a6a6a;
+  --border-color: #2a2a2a;
 }
 
 * {
@@ -56,25 +58,36 @@ nav a {
   color: var(--text-muted);
   text-decoration: none;
   font-size: 0.9rem;
+  transition: color 0.2s;
 }
 
-nav a:hover,
-nav a.active {
+nav a:hover {
   color: var(--text-color);
 }
 
+nav a.active {
+  color: var(--text-color);
+  font-weight: 600;
+}
+
 .theme-toggle {
-  background: none;
-  border: none;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
   cursor: pointer;
-  padding: 5px;
+  padding: 6px 10px;
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
+  transition: border-color 0.3s;
+}
+
+.theme-toggle:hover {
+  border-color: var(--text-muted);
 }
 
 .toggle-icon {
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: opacity 0.3s;
 }
 
@@ -109,7 +122,6 @@ nav a.active {
   list-style: none;
 }
 
-/* Top-level list items */
 .section > ul > li {
   color: var(--text-muted);
   font-size: 0.95rem;
@@ -125,7 +137,6 @@ nav a.active {
   color: var(--text-faint);
 }
 
-/* Nested lists */
 .section li ul {
   margin-top: 8px;
   margin-left: 10px;
@@ -244,7 +255,6 @@ nav a.active {
   font-style: italic;
 }
 
-/* Book list styles */
 .book-list {
   list-style: none;
   display: flex;
