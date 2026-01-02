@@ -11,6 +11,7 @@
   --text-faint: #555;
   --border-color: #1a1a1a;
   --link-color: #e5e5e5;
+  --toggle-bg: #1a1a1a;
 }
 
 [data-theme="light"] {
@@ -20,6 +21,7 @@
   --text-faint: #888;
   --border-color: #e5e5e5;
   --link-color: #1a1a1a;
+  --toggle-bg: #f0f0f0;
 }
 
 body {
@@ -74,19 +76,51 @@ nav a.active {
   color: var(--text-color);
 }
 
-/* Theme toggle button */
+/* Theme toggle switch */
 .theme-toggle {
-  background: none;
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--toggle-bg);
+  border: none;
+  border-radius: 20px;
+  padding: 6px 12px;
   cursor: pointer;
-  font-size: 1rem;
-  transition: border-color 0.3s;
+  transition: background-color 0.3s;
 }
 
-.theme-toggle:hover {
-  border-color: var(--text-muted);
+.toggle-icon {
+  font-size: 0.85rem;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.toggle-icon.active {
+  opacity: 1;
+}
+
+.toggle-track {
+  width: 36px;
+  height: 20px;
+  background: var(--text-faint);
+  border-radius: 10px;
+  position: relative;
+  transition: background-color 0.3s;
+}
+
+.toggle-thumb {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+[data-theme="light"] .toggle-thumb {
+  transform: translateX(16px);
 }
 
 /* Page title */
@@ -129,7 +163,35 @@ nav a.active {
   opacity: 0.7;
 }
 
-/* Item lists (for Curiosities) */
+/* Subsection navigation */
+.subsection-nav {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 15px;
+}
+
+.subsection-nav a {
+  color: var(--text-faint);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding-bottom: 15px;
+  margin-bottom: -16px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.subsection-nav a:hover {
+  color: var(--text-muted);
+}
+
+.subsection-nav a.active {
+  color: var(--text-color);
+  border-bottom-color: var(--text-color);
+}
+
+/* Item lists */
 .item-list {
   list-style: none;
 }
@@ -154,6 +216,13 @@ a.item-title:hover {
 .item-date {
   color: var(--text-faint);
   font-size: 0.85rem;
+}
+
+/* Empty state */
+.empty-state {
+  color: var(--text-faint);
+  font-style: italic;
+  padding: 40px 0;
 }
 
 /* Sort control */
