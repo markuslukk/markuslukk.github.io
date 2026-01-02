@@ -125,6 +125,11 @@ nav a.active {
   color: var(--text-faint);
 }
 
+/* Nested lists - no bullet for parent, indent children */
+.section li li {
+  padding-left: 15px;
+}
+
 .section a {
   color: var(--text-muted);
   text-decoration: underline;
@@ -147,6 +152,7 @@ nav a.active {
 .vertical-nav {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 20px;
 }
 
