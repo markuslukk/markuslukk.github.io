@@ -20,18 +20,28 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
+  min-height: 100vh;
 }
 
 .container {
   max-width: 650px;
+  width: 100%;
   margin: 0 auto;
   padding: 60px 20px;
+}
+
+main {
+  width: 100%;
 }
 
 header {
@@ -39,6 +49,7 @@ header {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 80px;
+  width: 100%;
 }
 
 .name {
