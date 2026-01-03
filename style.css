@@ -78,7 +78,6 @@ nav a:hover {
 
 nav a.active {
   color: var(--text-color);
-  font-weight: 600;
 }
 
 .theme-toggle {
