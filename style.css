@@ -93,7 +93,8 @@ nav a.active {
 }
 
 .theme-toggle:hover {
-  border-color: var(--text-muted);
+  border-color: var(--text-color);
+  background-color: var(--border-color);
 }
 
 .toggle-icon {
