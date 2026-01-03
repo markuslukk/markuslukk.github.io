@@ -1,4 +1,4 @@
-const toggle = document.getElementById('theme-toggle');
+const toggle = document.querySelector('.theme-toggle');
 const html = document.documentElement;
 
 const saved = localStorage.getItem('theme');
