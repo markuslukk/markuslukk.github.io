@@ -53,7 +53,7 @@ header {
 }
 
 .name {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-color);
   text-decoration: none;
@@ -98,8 +98,8 @@ nav a.active {
 }
 
 .toggle-icon {
-  font-size: 0.9rem;
   transition: opacity 0.3s;
+  color: var(--text-color);
 }
 
 [data-theme="dark"] .sun,
