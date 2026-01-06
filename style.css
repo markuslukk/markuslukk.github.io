@@ -155,7 +155,7 @@ nav a.active {
 .section > ul > li::before {
   content: "•";
   position: absolute;
-  left: 0.5em;
+  left: 0;
   color: var(--text-color);
 }
 
