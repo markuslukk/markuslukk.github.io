@@ -4,7 +4,6 @@
   --text-muted: #4a4a4a;
   --text-faint: #8a8a8a;
   --border-color: #e0e0e0;
-  --hover-bg: rgba(0, 0, 0, 0.15);
 }
 
 [data-theme="dark"] {
@@ -13,7 +12,6 @@
   --text-muted: #a0a0a0;
   --text-faint: #6a6a6a;
   --border-color: #2a2a2a;
-  --hover-bg: rgba(255, 255, 255, 0.1);
 }
 
 * {
@@ -59,14 +57,12 @@ header {
   font-weight: 600;
   color: var(--text-color);
   text-decoration: none;
-  padding: 4px 8px;
-  margin: -4px -8px;
-  border-radius: 4px;
-  transition: background-color 0.2s;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
 }
 
 .name:hover {
-  background-color: var(--hover-bg);
+  border-bottom-color: var(--text-color);
 }
 
 nav {
@@ -79,15 +75,13 @@ nav a {
   color: var(--text-muted);
   text-decoration: none;
   font-size: 0.9rem;
-  padding: 4px 8px;
-  margin: -4px -8px;
-  border-radius: 4px;
-  transition: color 0.2s, background-color 0.2s;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
 }
 
 nav a:hover {
   color: var(--text-color);
-  background-color: var(--hover-bg);
+  border-bottom-color: var(--text-color);
 }
 
 nav a.active {
@@ -103,12 +97,11 @@ nav a.active {
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: border-color 0.3s, background-color 0.2s;
+  transition: border-color 0.3s;
 }
 
 .theme-toggle:hover {
   border-color: var(--text-color);
-  background-color: var(--hover-bg);
 }
 
 .toggle-icon {
@@ -186,17 +179,14 @@ nav a.active {
 
 .section a {
   color: var(--text-muted);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: color 0.2s, background-color 0.2s;
-  padding: 2px 4px;
-  margin: -2px -4px;
-  border-radius: 3px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
 }
 
 .section a:hover {
   color: var(--text-color);
-  background-color: var(--hover-bg);
+  border-bottom-color: var(--text-color);
 }
 
 .section-heading {
@@ -218,14 +208,12 @@ nav a.active {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-  padding: 4px 8px;
-  margin: -4px -8px;
-  border-radius: 4px;
-  transition: background-color 0.2s;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
 }
 
 .vertical-nav a:hover {
-  background-color: var(--hover-bg);
+  border-bottom-color: var(--text-color);
 }
 
 .numbered-list {
@@ -255,14 +243,12 @@ nav a.active {
   text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-  padding: 4px 8px;
-  margin: -4px -8px;
-  border-radius: 4px;
-  transition: background-color 0.2s;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
 }
 
 .numbered-list a:hover {
-  background-color: var(--hover-bg);
+  border-bottom-color: var(--text-color);
 }
 
 .operating-principles-list {
@@ -281,7 +267,7 @@ nav a.active {
 }
 
 .operating-principles-list li::before {
-  content: "-";
+  content: "—";
   position: absolute;
   left: 0;
 }
@@ -303,14 +289,13 @@ nav a.active {
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
-  padding: 8px;
-  margin: -8px;
-  border-radius: 6px;
-  transition: background-color 0.2s;
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s;
 }
 
 .book-item:hover {
-  background-color: var(--hover-bg);
+  border-bottom-color: var(--text-color);
 }
 
 .book-info {
