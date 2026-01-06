@@ -29,7 +29,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.7;
   transition: background-color 0.3s, color 0.3s;
   min-height: 100vh;
 }
@@ -38,7 +38,7 @@ body {
   max-width: 650px;
   width: 100%;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 60px 20px;
 }
 
 main {
@@ -49,7 +49,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   width: 100%;
 }
 
@@ -123,18 +123,18 @@ nav a.active {
 .intro h1 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .section {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .section-label {
   font-size: 1rem;
   font-weight: 400;
   color: var(--text-color);
-  margin-bottom: 0.25em;
+  margin-bottom: 0.75em;
 }
 
 .section ul {
@@ -146,9 +146,10 @@ nav a.active {
 .section > ul > li {
   color: var(--text-muted);
   font-size: 1rem;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.6em;
   padding-left: 0;
   position: relative;
+  line-height: 1.7;
 }
 
 .section > ul > li::before {
@@ -159,14 +160,14 @@ nav a.active {
 }
 
 .section li ul {
-  margin-top: 0.2em;
+  margin-top: 0.4em;
   margin-left: 0;
 }
 
 .section li li {
   color: var(--text-muted);
   font-size: 1rem;
-  margin-bottom: 0.2em;
+  margin-bottom: 0.4em;
   padding-left: 0;
   position: relative;
 }
@@ -194,14 +195,14 @@ nav a.active {
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-color);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .vertical-nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 15px;
 }
 
 .vertical-nav a {
@@ -222,7 +223,7 @@ nav a.active {
   counter-reset: item;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .numbered-list li {
@@ -256,13 +257,13 @@ nav a.active {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 .operating-principles-list li {
   color: var(--text-color);
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
   padding-left: 20px;
   position: relative;
 }
@@ -282,7 +283,7 @@ nav a.active {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .book-item {
@@ -302,7 +303,7 @@ nav a.active {
 .book-info {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
 
 .book-title {
@@ -320,14 +321,14 @@ nav a.active {
   font-size: 0.85rem;
   color: var(--text-faint);
   font-style: italic;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .book-meta {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 2px;
+  gap: 4px;
   flex-shrink: 0;
 }
 
