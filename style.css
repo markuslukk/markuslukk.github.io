@@ -126,9 +126,9 @@ nav a.active {
   margin-bottom: 40px;
 }
 
-.section h2 {
-  font-size: 1rem;
-  font-weight: 600;
+.section-label {
+  font-size: 0.95rem;
+  font-weight: 400;
   color: var(--text-color);
   margin-bottom: 15px;
 }
