@@ -180,12 +180,14 @@ nav a.active {
 
 .section a {
   color: var(--text-muted);
-  text-decoration: underline;
-  transition: color 0.2s;
+  text-decoration: none;
+  border-bottom: 1px solid var(--text-faint);
+  transition: color 0.2s, border-color 0.2s;
 }
 
 .section a:hover {
   color: var(--text-color);
+  border-bottom-color: var(--text-color);
 }
 
 .section-heading {
