@@ -144,7 +144,7 @@ nav a.active {
 }
 
 .section > ul > li {
-  color: var(--text-muted);
+  color: var(--text-color);
   font-size: 1rem;
   margin-bottom: 0.6em;
   padding-left: 0;
@@ -165,7 +165,7 @@ nav a.active {
 }
 
 .section li li {
-  color: var(--text-muted);
+  color: var(--text-color);
   font-size: 1rem;
   margin-bottom: 0.4em;
   padding-left: 0;
