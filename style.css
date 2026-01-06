@@ -265,14 +265,14 @@ nav a.active {
   background-color: var(--hover-bg);
 }
 
-.principles-list {
+.operating-principles-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-.principles-list li {
+.operating-principles-list li {
   color: var(--text-color);
   font-size: 1rem;
   line-height: 1.7;
@@ -280,8 +280,8 @@ nav a.active {
   position: relative;
 }
 
-.principles-list li::before {
-  content: "—";
+.operating-principles-list li::before {
+  content: "-";
   position: absolute;
   left: 0;
 }
