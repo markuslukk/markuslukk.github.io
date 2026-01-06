@@ -134,7 +134,7 @@ nav a.active {
   font-size: 1rem;
   font-weight: 400;
   color: var(--text-color);
-  margin-bottom: 0.75em;
+  margin-bottom: 1.25em;
 }
 
 .section ul {
