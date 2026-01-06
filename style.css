@@ -134,13 +134,13 @@ nav a.active {
   font-size: 1rem;
   font-weight: 400;
   color: var(--text-color);
-  margin-bottom: 1.25em;
+  margin-bottom: 0.5em;
 }
 
 .section ul {
   list-style: none;
   padding-left: 0;
-  margin: 0 0 0.5em 0;
+  margin: 0;
 }
 
 .section > ul > li {
@@ -153,36 +153,36 @@ nav a.active {
 }
 
 .section > ul > li::before {
-  content: "●";
+  content: "•";
   position: absolute;
-  left: 0;
+  left: 0.5em;
   color: var(--text-color);
-  font-size: 0.5em;
-  top: 0.6em;
+  font-size: 1em;
 }
 
 .section li ul {
-  margin-top: 0.4em;
+  margin-top: 0.15em;
   margin-left: 0;
 }
 
 .section li li {
   color: var(--text-color);
   font-size: 1rem;
-  margin-bottom: 0.4em;
-  padding-left: 0;
+  margin-bottom: 0.15em;
+  padding-left: 1.5em;
   position: relative;
 }
 
 .section li li::before {
   content: "•";
   position: absolute;
-  left: 0;
+  left: 0.5em;
   color: var(--text-color);
+  font-size: 1em;
 }
 
 .section a {
-  color: var(--text-muted);
+  color: var(--text-color);
   text-decoration: none;
   border-bottom: 1px solid var(--text-faint);
   transition: color 0.2s, border-color 0.2s;
