@@ -146,7 +146,7 @@ nav a.active {
 .section > ul > li {
   color: var(--text-color);
   font-size: 1rem;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.15em;
   padding-left: 0;
   position: relative;
   line-height: 1.7;
@@ -156,7 +156,7 @@ nav a.active {
   content: "•";
   position: absolute;
   left: -1em;
-  color: var(--text-faint);
+  color: var(--text-color);
 }
 
 .section li ul {
